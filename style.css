@@ -1,0 +1,58 @@
+html{
+    min-height: 100%;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+}
+
+.card .card-image{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(100, 100, 100);
+    border-radius: 100px;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+}
+
+.card .card-image img{
+    width: 130px;    
+}
+
+.card .name{
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card .bio{
+    width: 270px;
+    height: 170px;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    overflow-y: auto;
+}
+
+.card .bio::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
